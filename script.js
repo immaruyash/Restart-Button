@@ -3,6 +3,10 @@ function showDialog() {
     dialog.show(); 
   }
   
+function replayFunction(){
+    document.getElementById("restart").style.display = "block";
+    document.getElementById("myDialog").style.display = "none";
+}
   
 var i = 0;
 
@@ -18,6 +22,7 @@ function loaderFunction() {
       if (width >= 100) {
         clearInterval(id);
         document.getElementById("percentage").style.display = "none";
+        document.getElementById("myDialog").style.display = "block";
         showDialog();
         i = 0;
       } else {
