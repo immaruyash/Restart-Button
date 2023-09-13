@@ -12,19 +12,19 @@
 </style>
 </head>
 <body>
-    <div id="percentage-box">
-        <div id="percentage" style="display:none">Loading</div>
+    <div id="container" >
+        <div class="Loading"></div>
     </div>
     <dialog id="myDialog">
-        <p style="font-family: Copperplate, Papyrus, fantasy;font-size:x-large; font-weight: bolder;">Now, Everythings had restarted</p>
-        <p style="font-family: Copperplate, Papyrus, fantasy;font-size: medium;font-weight: 900;">If this doesn't  work, wait for the sunrise, <br>because every sunrise is nature's restart in life</p>
-        <div id="replay">
-            <button type="submit" class="button" onclick="replayFunction()">Play Again</button>
-        </div>
+        <p style="font-family: Copperplate, Papyrus, fantasy;font-size:x-large; font-weight: bolder;">
+            Now, Everythings had restarted
+        </p>
+        <p style="font-family: Copperplate, Papyrus, fantasy;font-size: medium;font-weight: 900;">
+            If this doesn't  work, wait for the sunrise, <br>because every sunrise is nature's restart in life
+        </p>
+        <button id="replay" type="submit" class="button" onclick="replay()">Play Again</button>
     </dialog>
-    <div id="restart">
-        <button class="button" role="button" onclick="loaderFunction()">Restart</button>
-    </div>
+    <button id="restart" class="button" onclick="restart()">Restart</button>
     
 </body>
 </html>
